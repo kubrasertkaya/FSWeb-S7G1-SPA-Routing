@@ -28,9 +28,10 @@ export default function App() {
   }, []);
 
   const KaydedilenlerListesineEkle = (id) => {
-    console.log("KaydedilenlerListesineEkle",İd);
+    console.log("KaydedilenlerListesineEkle",id);
     // Burası esnek. Aynı filmin birden fazla kez "saved" e eklenmesini engelleyin
-    
+    const eklenecekFilm=movieList.find((movie) =>movie.id==id);
+    console.log("eklenecekFilm",eklenecekFilm);
   };
 
   return (
